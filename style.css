@@ -10,9 +10,13 @@ body{
     --purple:#12045f;
     --light-blue: rgb(26, 101, 231);
     --sky-blue:#e1f6fd;
-    --green:#ddfaf2;
+    --green:#caf1e6;
 }
 
+.title{
+    color: gray;
+    font-weight: bold;
+}
 /*------------Header------------*/
 header {
     width: 100vw;
@@ -140,7 +144,7 @@ main .container{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 #company-options #services,#process{
@@ -173,12 +177,11 @@ main .container{
 
 #company-options div .description p{
     font-size: 1.1rem;
-}   
-
-.description .title,p{
     color: gray;
 
-}
+}   
+
+
 
 section #services{
     display: flex;
@@ -189,9 +192,36 @@ section #services img{
 }
 
 section #process{
+    margin-top: 5px;
 
 }
 
 section #process img{
     
+}
+
+/*------------ Clients------------*/
+
+main #clients{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+
+#clients #client-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+#clients #client-items img{
+    background-color: white;
+    width: 220px;
+    height: 110px;
+    margin: 10px 0;
+    padding: 0 40px;
 }
