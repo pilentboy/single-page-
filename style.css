@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root{
+    --purple:#12045f;
+    --light-blue: rgb(26, 101, 231);
+    --sky-blue:#e1f6fd;
+    --green:#ddfaf2;
+}
 
 /*------------Header------------*/
 header {
@@ -13,6 +19,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background-color: #daedf4;
 }
 
 header #nav{
@@ -32,7 +39,7 @@ header #nav #links #purple-circle{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 7px solid purple;
+    border: 7px solid var(--purple);
     background-color: transparent;
 }
 
@@ -49,9 +56,12 @@ header #nav #links #link-list{
 
 #nav #links #link-list li a{
     text-decoration: none;
-
+    color: var(--purple);
+    font-size: 1.1rem;
 }
-
+#nav #links #link-list li a:hover{
+    color: var(--light-blue);
+}
 header #nav #call-back-btn{
     text-decoration: none;
     color: black;
@@ -64,8 +74,8 @@ header #nav #call-back-btn{
 
 }
 header #nav #call-back-btn:hover{
-    border-color: blue;
-    color: blue;
+    border-color: var(--light-blue);
+    color: var(--light-blue);
     transition: all 0.3ms;
 }
 
@@ -91,6 +101,7 @@ header #header-text h1{
 }
 
 header #bottom-arrow{
+    color: var(--purple);
     font-size: 2.5rem;
     animation-name: chervon;
     animation-duration: 2s;
