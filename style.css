@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*------------Header------------*/
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header #nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+}
+
+header #nav #links{
+    display: flex;
+    align-items: center;
+    width: 320px;
+}
+
+header #nav #links #purple-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 7px solid purple;
+    background-color: transparent;
+}
+
+header #nav #links #link-list{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#nav #links #link-list li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+#nav #links #link-list li a{
+    text-decoration: none;
+
+}
+
+header #nav #call-back-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 14px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: all 0.3ms;
+
+}
+header #nav #call-back-btn:hover{
+    border-color: blue;
+    color: blue;
+    transition: all 0.3ms;
+}
+
+
+header #header-text{
+    width: 70%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header #header-text p{
+    font-size: 1.1rem;
+    width: 50%;
+    text-align: center;
+}
+
+header #header-text h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+header #bottom-arrow{
+    font-size: 2.5rem;
+    animation-name: chervon;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes chervon{
+    50%{
+        transform: translateY(10%); 
+    }
+    100%{
+        transform: translateY(0%); 
+
+    }
+}
