@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
 :root{
     --purple:#12045f;
     --light-blue: rgb(26, 101, 231);
@@ -116,4 +118,80 @@ header #bottom-arrow{
         transform: translateY(0%); 
 
     }
+}
+
+/* main */
+/*------------company-options------------*/
+
+main{
+    background-color: var(--green);
+    width: 100vw;
+    height: 100%;
+}
+main .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#company-options{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+#company-options #services,#process{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#company-options div img{
+
+}
+
+#company-options div .description{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#company-options div .description *{
+    margin: 10px 0;
+}
+
+#company-options div .description .title{
+    align-items: flex-start;
+    letter-spacing: 3px;
+}
+
+#company-options div .description h1{
+    font-size: 2rem;
+}
+
+#company-options div .description p{
+    font-size: 1.1rem;
+}   
+
+.description .title,p{
+    color: gray;
+
+}
+
+section #services{
+    display: flex;
+}
+
+section #services img{
+    order: 2;
+}
+
+section #process{
+
+}
+
+section #process img{
+    
 }
