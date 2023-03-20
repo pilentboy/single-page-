@@ -238,12 +238,11 @@ main #clients{
 
 /*------------ call to action------------*/
 .container #call-action{
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    padding: 20px 0;
 
 }
-
+/*------------call-action left ------------*/
 .container #call-action #left{
     flex: 1;
     border: 1px solid rgba(128, 128, 128, 0.502);
@@ -304,9 +303,49 @@ main #clients{
 }
 
 
+
+/*------------call-action right ------------*/
 .container #call-action #right{
     flex:1;
     border: 1px solid rgba(128, 128, 128, 0.502);
     border-right: none;
     border-left: none;
+    display: flex;
+    align-items: center;
 }
+
+.container #call-action #right .container{
+    height: 70%;
+    display: flex;
+    align-items: center;
+   
+}
+
+.container #call-action #right .item{
+    display: flex;
+    height: 150px;
+    width: 300px;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.container #call-action #right .item i{
+    font-size: 2.2rem;
+    color: var(--light-blue);
+    width: 10%;
+}
+
+.container #call-action #right .item .detail{
+    width:80%;
+}
+
+.container #call-action #right .item .detail h2{
+    font-size: 1rem;   
+}
+
+.container #call-action #right .item .detail p{
+    line-height: 16px;
+    color: gray;
+    font-size: 0.8rem;
+}
+
