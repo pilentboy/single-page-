@@ -17,7 +17,7 @@ body{
     --purple:#12045f;
     --light-blue: rgb(26, 101, 231);
     --sky-blue:#e1f6fd;
-    --green:#caf1e6;
+    --green:#9fe1ee;
 }
 
 
@@ -250,45 +250,51 @@ main #clients{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-.container #call-action #left h1,p,form{
+.container #call-action #left .contaier{
+   height: 100%;
+   width: 90%;
+}
+
+.container #call-action #left .contaier h1,p,form{
     margin: 12px 0;
 }
-.container #call-action #left h1{
+.container #call-action #left .contaier h1{
     font-weight: 500;
     font-size: 2rem;
 }
-.container #call-action #left p{
+.container #call-action #left .contaier p{
     color: gray;
     line-height: 20px;
     width: 70%;
 }
-.container #call-action #left form{
+.container #call-action #left .contaier form{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 70%;
 }
 
-.container #call-action #left form input,select,button{
+.container #call-action #left .contaier form input,select,button{
     width: 100%;
     margin: 10px 0;
     padding: 15px 10px;
     border-radius: 5px;
 
 }
-.container #call-action #left form input,select{
+.container #call-action #left .contaier form input,select{
     outline: none;
     border: 1px solid  rgb(57, 186, 237);
 }
-.container #call-action #left form select{
+.container #call-action #left .contaier form select{
 
 }
-.container #call-action #left form select option{
+.container #call-action #left .contaier form select option{
 
 }
 
-.container #call-action #left form #call-action-btn{
+.container #call-action #left .contaier form #call-action-btn{
     background-color: var(--light-blue);
     border: none;
     color:#fff;
@@ -297,7 +303,7 @@ main #clients{
     font-size: 1rem;
     transition: all 0.3s;
 }
-.container #call-action #left form #call-action-btn:hover{
+.container #call-action #left .contaier form #call-action-btn:hover{
     background-color: rgb(40, 40, 241);
     transition: all 0.3s;
 }
@@ -310,15 +316,15 @@ main #clients{
     border: 1px solid rgba(128, 128, 128, 0.502);
     border-right: none;
     border-left: none;
-    display: flex;
-    align-items: center;
+  
+
 }
 
 .container #call-action #right .container{
     height: 70%;
     display: flex;
     align-items: center;
-   
+    margin-top: 12%;
 }
 
 .container #call-action #right .item{
@@ -346,6 +352,6 @@ main #clients{
 .container #call-action #right .item .detail p{
     line-height: 16px;
     color: gray;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
