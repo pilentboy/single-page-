@@ -3,9 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     overflow-x: hidden;
+    font-family: 'Prompt', sans-serif;
 }
+
 :root{
     --purple:#12045f;
     --light-blue: rgb(26, 101, 231);
@@ -13,10 +20,7 @@ body{
     --green:#caf1e6;
 }
 
-.title{
-    color: gray;
-    font-weight: bold;
-}
+
 /*------------Header------------*/
 header {
     width: 100vw;
@@ -33,16 +37,17 @@ header #nav{
     justify-content: space-between;
     align-items: center;
     width:80%;
+
 }
 
 header #nav #links{
     display: flex;
     align-items: center;
-    width: 320px;
+    width: 400px;
 }
 
 header #nav #links #purple-circle{
-    width: 30px;
+    width:30px;
     height: 30px;
     border-radius: 50%;
     border: 7px solid var(--purple);
@@ -126,6 +131,10 @@ header #bottom-arrow{
 
 /* main */
 /*------------company-options------------*/
+.title{
+    color: gray;
+    font-weight: bold;
+}
 
 main{
     background-color: var(--green);
@@ -143,8 +152,8 @@ main .container{
 #company-options{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     height: 100vh;
-    padding-top: 3%;
 }
 
 #company-options #services,#process{
@@ -203,18 +212,18 @@ section #process img{
 /*------------ Clients------------*/
 
 main #clients{
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 5%;
+    justify-content: center;
 }
 
 #clients #client-items{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 5%;
   
 }
 
