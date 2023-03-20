@@ -108,6 +108,7 @@ header #header-text p{
 
 header #header-text h1{
     font-size: 3rem;
+    line-height: 50px;
     text-align: center;
 }
 
@@ -233,4 +234,79 @@ main #clients{
     height: 110px;
     margin: 10px 0;
     padding: 0 40px;
+}
+
+/*------------ call to action------------*/
+.container #call-action{
+    min-height: 100vh;
+    display: flex;
+    padding: 20px 0;
+
+}
+
+.container #call-action #left{
+    flex: 1;
+    border: 1px solid rgba(128, 128, 128, 0.502);
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container #call-action #left h1,p,form{
+    margin: 12px 0;
+}
+.container #call-action #left h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+.container #call-action #left p{
+    color: gray;
+    line-height: 20px;
+    width: 70%;
+}
+.container #call-action #left form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.container #call-action #left form input,select,button{
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 10px;
+    border-radius: 5px;
+
+}
+.container #call-action #left form input,select{
+    outline: none;
+    border: 1px solid  rgb(57, 186, 237);
+}
+.container #call-action #left form select{
+
+}
+.container #call-action #left form select option{
+
+}
+
+.container #call-action #left form #call-action-btn{
+    background-color: var(--light-blue);
+    border: none;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+.container #call-action #left form #call-action-btn:hover{
+    background-color: rgb(40, 40, 241);
+    transition: all 0.3s;
+}
+
+
+.container #call-action #right{
+    flex:1;
+    border: 1px solid rgba(128, 128, 128, 0.502);
+    border-right: none;
+    border-left: none;
 }
