@@ -18,6 +18,7 @@ body{
     --light-blue: rgb(26, 101, 231);
     --sky-blue:#e1f6fd;
     --green:#9fe1ee;
+    --member-p:rgb(79, 78, 78)
 }
 
 
@@ -157,7 +158,7 @@ main .container{
     height: 100vh;
 }
 
-#company-options #services,#process{
+.info-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,35 +168,31 @@ main .container{
 
 }
 
-#company-options div .description{
+.description{
     display: flex;
     flex-direction: column;
     width: 40%;
 }
-#company-options div .description *{
-    margin: 10px 0;
+
+.description *{
+    margin: 7px 0;
 }
 
-#company-options div .description .title{
+.description .title{
     align-items: flex-start;
     letter-spacing: 3px;
 }
 
-#company-options div .description h1{
+.description h1{
     font-size: 2rem;
 }
 
-#company-options div .description p{
+.description p{
     font-size: 1.1rem;
     color: gray;
 
 }   
 
-
-
-section #services{
-    display: flex;
-}
 
 section #services img{
     order: 2;
@@ -242,6 +239,11 @@ main #clients{
     display: flex;
 
 }
+
+.container > #call-action{
+ 
+}
+
 /*------------call-action left ------------*/
 .container #call-action #left{
     flex: 1;
@@ -355,3 +357,73 @@ main #clients{
     font-size: 0.7rem;
 }
 
+/*------------ TEAM ------------*/
+main .container #team{
+    min-height: 100vh;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .container #team .info-content img{
+    order: 2;
+}
+
+.container #team #team-members{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height:350px ;
+    margin-top: 50px;
+}   
+
+.container #team #team-members .item{
+    width: 400px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container #team #team-members .item img{
+
+}
+
+.container #team #team-members .item .item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    width: 60%;
+}
+.container #team #team-members .item .item-info p{
+    line-height: 20px;
+    color: var(--member-p);
+}
+
+.container #team #team-members .item .item-info .member-name{
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+}
+.container #team #team-members .item .item-info .member-job {
+    font-size: 0.9rem;
+}
+
+
+
+/*------------ culture ------------*/
+
+#culture{
+    height: 60vh;
+    margin-top: 100px;
+}
+
+.img-left-content{
+    
+}
+
+.img-left-content .description{
+    order: 2 !important;
+}
