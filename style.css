@@ -47,7 +47,7 @@ header #nav #links{
     width: 400px;
 }
 
-header #nav #links #purple-circle{
+.purple-circle{
     width:30px;
     height: 30px;
     border-radius: 50%;
@@ -426,4 +426,69 @@ main .container #team .info-content img{
 
 .img-left-content .description{
     order: 2 !important;
+}
+
+
+/*------------ Footer ------------*/
+footer{
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .container{
+    width: 80%;
+    min-height: 50%;  
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+footer .container .item{
+    flex-direction: column;
+    display: flex;
+    justify-content:space-between;
+    width: 300px;
+    min-height: 150px;
+}
+
+footer .container .item .top,.bottom{
+    height: 100%;
+}
+
+footer .container .item  h1{
+    letter-spacing: 3px;
+    color: var(--purple);
+    font-weight: bold !important;
+    position: relative;
+}
+footer .container .item  h1 >span{
+    position: absolute;
+    left: -15%;
+    top: 0;
+}
+
+footer .container .item h1,p,pre{
+    font-size: 0.8rem;
+
+}
+
+footer .container .item p,pre{
+    margin: 15px 0;
+}
+
+footer .container .item  p,pre,ul>li{
+    color: gray;
+    list-style: none;
+}
+
+footer .container .item ul li{
+    font-size: 0.8rem;
+    margin: 8px 0;
+}
+
+footer .container .item .bottom{
+    
 }
