@@ -1,5 +1,91 @@
 
 
+@media only screen and (max-width:1100px) {
+    header{
+        justify-content: space-around;
+        height: 95vh;
+    }
+
+    header #header-text h1,p{
+        width: 95% !important;
+    }
+    header #header-text p{
+        line-height: 30px;
+    }
+    header #header-text{
+        height: 30% !important;
+        width: 80%;
+    }
+
+    #company-options,.info-content{
+        flex-direction: column !important;
+    }
+    
+    .description{
+        width: 90%;
+    }
+
+    #company-options{
+        height: 100% !important;
+        padding-top: 10px;
+    }
+
+    .info-content img{
+        width: 90%;
+    }
+
+    main .container{
+        width: 97vw;
+    }
+
+    section #process img{
+        order: 1;
+    }
+
+    .container #call-action{
+        height: 100%;
+        flex-direction: column;
+        border: 1px solid rgba(128, 128, 128, 0.502);
+        border-left: none;
+        border-right: none;
+    }
+   
+
+    .container #call-action #left,#right{
+        border: none !important;
+    }
+    .container #call-action #left .contaier form{
+        width: 100%;
+    }
+
+
+    #culture{
+        height: 100%;
+    }
+
+    .img-left-content img{
+        order: 3;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        height: 100%;
+    }
+    footer .container{
+        padding-top: 30px;
+    }
+
+    .container #team #team-members{
+        justify-content: center;
+    }
+
+    main #clients{
+        height: 100%;
+        margin-top: 30px;
+    }
+}
+
+
 
 @media only screen and (max-width:750px) {
     /*header*/
@@ -9,6 +95,9 @@
     header #nav #links{
         flex-direction: column;
         width: 100%;
+    }
+    header {
+        height: 100vh;
     }
     header #nav{
         width: 95vw;
@@ -34,39 +123,20 @@
     header #header-text h1{
         font-size: 2.2rem !important;
     }
-    header #header-text h1,p{
-        width: 95% !important;
-
-    }
 
     /*main*/
-    main .container{
-        width: 97vw;
-    }
-    #company-options{
-        height: 100%;
-        padding-top: 10px;
-    }
-    #company-options,.info-content{
-        flex-direction: column !important;
-    }
+ 
     .info-content{
         flex-direction: column-reverse !important;
     }
     .info-content img{
         width: 100%;
     }
-    .description{
-        width: 90%;
-    }
-    section #process img{
-        order: 1;
-    }
 
     main #clients{
-        height: 100%;
         padding-top: 5px;
     }
+
     #clients #client-items{
         width: 100%;
         justify-content: center;
@@ -80,36 +150,11 @@
         margin: 10px 5px;
     }
 
-    .container #call-action{
-        height: 100%;
-        flex-direction: column;
-        border: 1px solid rgba(128, 128, 128, 0.502);
-        border-left: none;
-        border-right: none;
-    }
     .container #call-action #right .item{
         height: 100px;
     }
-
-    .container #call-action #left,#right{
-        border: none !important;
-    }
-    .container #call-action #left .contaier form{
-        width: 100%;
-    }
-
-    #culture{
-        height: 100%;
-    }
-
-    .img-left-content img{
-        order: 3;
-        margin-bottom: 30px;
-    }
-
-    footer{
-        height: 100%;
-    }
+  
+   
     footer .container{
         padding-top: 70px;
         width: 90%;
@@ -128,10 +173,13 @@
     }
     header #header-text p{
         font-size: 0.9rem;
+        line-height: 20px;
     }
+
 
     .container #team #team-members .item img{
         width: 110px;
         height: 110px;
     }
+
 }
