@@ -72,6 +72,13 @@
         justify-content: center;
     }
     
+
+    #clients #client-items img{
+        width: 140px;
+        height: 70px;
+        padding: 20px;
+        margin: 10px 5px;
+    }
 }
 
 @media only screen and (max-width:340px) {
