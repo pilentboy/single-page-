@@ -63,7 +63,14 @@
         order: 1;
     }
 
-
+    main #clients{
+        height: 100%;
+        padding-top: 5px;
+    }
+    #clients #client-items{
+        width: 100%;
+        justify-content: center;
+    }
     
 }
 
