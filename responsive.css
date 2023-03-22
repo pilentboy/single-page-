@@ -107,7 +107,18 @@
         margin-bottom: 30px;
     }
 
-    
+    footer{
+        height: 100%;
+    }
+    footer .container{
+        padding-top: 70px;
+        width: 90%;
+    }
+    footer .container .item  h1 >span{
+        left: 0;
+        top: -200% !important;
+    }
+
 }
 
 @media only screen and (max-width:340px) {
