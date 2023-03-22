@@ -236,7 +236,6 @@ main #clients{
 .container #call-action{
     height: 100vh;
     display: flex;
-
 }
 
 .container > #call-action{

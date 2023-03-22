@@ -79,6 +79,26 @@
         padding: 20px;
         margin: 10px 5px;
     }
+
+    .container #call-action{
+        height: 100%;
+        flex-direction: column;
+        border: 1px solid rgba(128, 128, 128, 0.502);
+        border-left: none;
+        border-right: none;
+    }
+    .container #call-action #right .item{
+        height: 100px;
+    }
+
+    .container #call-action #left,#right{
+        border: none !important;
+    }
+    .container #call-action #left .contaier form{
+        width: 100%;
+    }
+
+
 }
 
 @media only screen and (max-width:340px) {
@@ -88,5 +108,10 @@
     }
     header #header-text p{
         font-size: 0.9rem;
+    }
+
+    .container #team #team-members .item img{
+        width: 110px;
+        height: 110px;
     }
 }
